@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--1. 시작태그와 닫는 태그로 구성된 태그가 있다-->
+<!--2. 시작태그만 있는 태그  -->
+<!--
+        태그는 중첩립 구조를 가질 수 있음
+        하나의 태그가 다른 태그들을 포함할 수 있음
+        이 때 부모와 자식의 관계가 성립
+
+
+        ex) body - div - h1
+        바디 입장에서 자식, 후손의 개념이 생김
+
+        element : 태그 사이에 있는 요소를 통칭
+        property(attribute) : 태그의 속성
+
+        HTML문서는 2가지 부분으로 구성
+        <head> :설정
+        <body> : web browser에서 rendering 할 데이터
+        2는 html의 자식
+
+        태그는 크게 두가지 종류
+        1. block level element
+           무조건 한 줄을 차지
+        2. inline element
+           라인은 잡지 않고 내용에 대한 영역만 차지
+
+  -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- 이거 안 적으면 영어로 나옴-->
+        <title>Title</title>
+        <style>
+            .myclass {
+               color: yellow;
+                background-color: darkgoldenrod;
+                font-size: 20pt;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 class="myclass">힝구</h1> <!-- 6 레벨까지 있음 갈 수록 작아짐     -->
+        <h2>ㅜㅜㅜㅜ</h2>
+        <img src="image/cuty_bbozzack.jpg" width="500"
+            data-author = '홍길동' >  <!-- 없는 속성을 추가할때에는 data- -->
+        <!-- 스타일은 css에서 변경하는게 좋다 -->
+        <!-- ul : unordered list  순서없는 리스트라는 뜻 -->
+
+        <span>이건 기능이 없..</span> <!-- 이렇게 안써두면 핸들링 안됨 아래 div와 비슷하나 좀 다름  -->
+        <div>이것도 영역만 잡는거야 다만 정렬이 되네!!!!</div>
+
+
+        <br>
+        <ul>
+            <li>이천</li>
+            <li>인천</li>
+            <li class="myclass">홍천</l>
+        </ul>
+        <ol>
+
+            <li>홍길동</li>
+            <li>김길동</li>
+            <li class="myclass">신사임당</l>
+        </ol>
+        <a href="http://www.naver.com"> 클릭하지마아아아아악!!!!!!!</a>
+
+          <!-- 사용자 입력 양식 -->
+        <input type="button" value="진짜 누르지마">
+        <input type="text">
+        <input type="date">
+        <input type="color">
+    </body>
+</html>
